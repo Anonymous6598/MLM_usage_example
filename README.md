@@ -13,4 +13,9 @@ Just practising deploying MLM locally on my laptop
 - 3.12.10
 
 ## Ran using
-- NPU (used intel_npu_acceleration_library(1.2.0))
+- NPU
+
+## Libraries used
+- Torch==2.7.0
+- Intel_npu_accelertion_library==1.2.0
+- Transformers==4.51.3
