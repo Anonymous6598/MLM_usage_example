@@ -1,7 +1,7 @@
 # MLM_test
 Just practising deploying MLM locally on my laptop
 
-## Specs
+## Laptop specs
 - Intel Core Ultra 7 155H
 - Intel Arc Graphics
 - Intel AI Boost
