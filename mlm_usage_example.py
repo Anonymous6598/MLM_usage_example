@@ -12,8 +12,8 @@ def initialize_model() -> transformers.Pipeline:
 
 def main(pipe: transformers.Pipeline, prompt: str) -> str:
     generation_args: dict[str: int, str: bool, str: float, str: bool] = {f"max_new_tokens": 1024, f"return_full_text": False, f"temperature": 0.3, f"do_sample": False}
-    query = f"<|system|>You are a helpful AI assistant.<|end|><|user|>{prompt}<|end|><|assistant|>"
-    output = pipe(query, **generation_args)
+    query: str = f"<|system|>You are a helpful AI assistant.<|end|><|user|>{prompt}<|end|><|assistant|>"
+    output: str = pipe(query, **generation_args)
     return output[0][f"generated_text"]
 
 if __name__ == f"__main__":
