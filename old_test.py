@@ -1,6 +1,4 @@
-import intel_npu_acceleration_library, torch, warnings, transformers, typing
-
-warnings.filterwarnings(f"ignore")
+import intel_npu_acceleration_library, torch, transformers, typing
 
 def initialize_model() -> transformers.Pipeline:
     model_id: str = f"microsoft/Phi-3-medium-128k-instruct"
