@@ -21,9 +21,9 @@ def complex_example(prompt: str) -> str:
     config: openvino_genai.GenerationConfig = openvino_genai.GenerationConfig()
     config.max_new_tokens: int = 1024
     config.temperature: float = 0.3
-    config.top_p: float = 0.95
-    config.top_k: int = 50
-    config.repetition_penalty: float = 1.3
+    config.top_p: float = 0.1
+    config.top_k: int = 1
+    config.repetition_penalty: float = 1.0
     config.num_beams: int = 1
     config.num_return_sequences: int = 1
     config.do_sample: bool = False
